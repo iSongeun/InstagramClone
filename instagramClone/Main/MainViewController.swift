@@ -13,6 +13,9 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var FeedCollectionView: UICollectionView!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         StoryCollectionView.tag = 0
@@ -60,4 +63,7 @@ extension MainViewController : UICollectionViewDataSource , UICollectionViewDele
     }
     
     
+}
+
+extension MainViewController : UIScrollViewDelegate {
 }
